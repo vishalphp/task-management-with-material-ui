@@ -21,6 +21,7 @@
   "scripts": {
     "start": "webpack-dev-server --mode development --open",
     "build": "webpack --mode production",
+    "watch":"webpack-dev-server --mode development --watch",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },

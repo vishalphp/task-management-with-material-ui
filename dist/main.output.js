@@ -15025,7 +15025,7 @@ function r(e){var t,f,n="";if("string"==typeof e||"number"==typeof e)n+=e;else i
 /******/ 	
 /******/ 	/* webpack/runtime/getFullHash */
 /******/ 	!function() {
-/******/ 		__webpack_require__.h = function() { return "8a307b849fc4d359f0af"; }
+/******/ 		__webpack_require__.h = function() { return "e69c3dd25f89d5886d0e"; }
 /******/ 	}();
 /******/ 	
 /******/ 	/* webpack/runtime/global */
@@ -28853,7 +28853,6 @@ function Navigation(props) {
   }, /*#__PURE__*/react.createElement(Link_Link, {
     href: "#",
     color: "inherit",
-    rel: "noopener",
     underline: "hover"
   }, "  ", /*#__PURE__*/react.createElement("div", {
     className: "logo",
@@ -28875,19 +28874,21 @@ function Navigation(props) {
     }
   }, /*#__PURE__*/react.createElement(dist_Link, {
     to: "/tasks",
-    color: "#fff",
-    rel: "noopener",
+    style: {
+      color: '#fff'
+    },
     underline: "hover"
   }, "  Tasks")), /*#__PURE__*/react.createElement(ListItem_ListItem, {
     style: {
       borderBottom: '1px solid #ccc'
     }
-  }, /*#__PURE__*/react.createElement(Link_Link, {
-    href: "#",
-    color: "inherit",
-    rel: "noopener",
+  }, /*#__PURE__*/react.createElement(dist_Link, {
+    to: "/document",
+    style: {
+      color: '#fff'
+    },
     underline: "hover"
-  }, "Documents")))), /*#__PURE__*/react.createElement(List_List, {
+  }, "  Documents")))), /*#__PURE__*/react.createElement(List_List, {
     component: Stack_Stack,
     direction: "row",
     fontWeight: 700,
@@ -28902,15 +28903,17 @@ function Navigation(props) {
     }
   }, /*#__PURE__*/react.createElement(ListItem_ListItem, null, /*#__PURE__*/react.createElement(dist_Link, {
     to: "/tasks",
-    color: "#fff",
-    rel: "noopener",
+    style: {
+      color: '#fff'
+    },
     underline: "hover"
-  }, "  Tasks")), /*#__PURE__*/react.createElement(ListItem_ListItem, null, /*#__PURE__*/react.createElement(Link_Link, {
-    href: "#",
-    color: "inherit",
-    rel: "noopener",
+  }, "  Tasks")), /*#__PURE__*/react.createElement(ListItem_ListItem, null, /*#__PURE__*/react.createElement(dist_Link, {
+    to: "/document",
+    style: {
+      color: '#fff'
+    },
     underline: "hover"
-  }, "Documents")))));
+  }, "  Documents")))));
 }
 // EXTERNAL MODULE: ./node_modules/@mui/material/utils/createSvgIcon.js + 2 modules
 var createSvgIcon = __webpack_require__(9026);
@@ -34072,7 +34075,148 @@ function addTask_Index() {
     }), " ", new Date(tasks.date).getDate() + ' ' + monthNames[new Date(tasks.date).getMonth()] + ' ' + new Date(tasks.date).getFullYear())));
   })))));
 }
+;// CONCATENATED MODULE: ./src/Pages/Document.js
+
+
+
+function Document() {
+  return /*#__PURE__*/react.createElement(Container_Container, null, /*#__PURE__*/react.createElement(Unstable_Grid2_Grid2, {
+    container: true,
+    xs: 12,
+    display: 'flex',
+    marginTop: '40px',
+    marginBottom: '40px',
+    flexDirection: 'row',
+    alignItems: 'flex-start',
+    textAlign: 'left'
+  }, /*#__PURE__*/react.createElement(Unstable_Grid2_Grid2, {
+    xs: 12,
+    marginTop: '10px',
+    marginBottom: '10px',
+    display: 'flex',
+    flexDirection: 'row',
+    alignItems: 'flex-start',
+    textAlign: 'left'
+  }, /*#__PURE__*/react.createElement(Typography_Typography, {
+    variant: "h4",
+    sx: {
+      fontSize: {
+        xs: '24px'
+      }
+    },
+    fontWeight: '700',
+    color: 'rgb(121, 128, 255)',
+    textAlign: 'left'
+  }, "Title:")), /*#__PURE__*/react.createElement(Unstable_Grid2_Grid2, {
+    xs: 12,
+    marginTop: '10px',
+    marginBottom: '10px',
+    display: 'flex',
+    flexDirection: 'row',
+    alignItems: 'flex-start',
+    textAlign: 'left'
+  }, "Task Management Pages With Material UI"), /*#__PURE__*/react.createElement(Unstable_Grid2_Grid2, {
+    xs: 12,
+    marginTop: '10px',
+    marginBottom: '10px'
+  }, /*#__PURE__*/react.createElement(Typography_Typography, {
+    variant: "h4",
+    margin: 'auto',
+    sx: {
+      fontSize: {
+        xs: '24px'
+      }
+    },
+    fontWeight: '700',
+    color: 'rgb(121, 128, 255)'
+  }, "Project Goals and Objectives:")), /*#__PURE__*/react.createElement(Unstable_Grid2_Grid2, {
+    xs: 12,
+    marginTop: '10px',
+    marginBottom: '10px'
+  }, "The project is designed using material-ui design library and optimized with webpack 5. The project has two pages, one home, and a second task."), /*#__PURE__*/react.createElement(Unstable_Grid2_Grid2, {
+    xs: 12,
+    marginTop: '10px',
+    marginBottom: '10px'
+  }, "The project's main goal is to learn new things that may not be covered while working in a product-based company. The project will enhance the knowledge in react."), /*#__PURE__*/react.createElement(Unstable_Grid2_Grid2, {
+    xs: 12,
+    marginTop: '10px',
+    marginBottom: '10px'
+  }, /*#__PURE__*/react.createElement(Typography_Typography, {
+    variant: "h4",
+    margin: 'auto',
+    sx: {
+      fontSize: {
+        xs: '24px'
+      }
+    },
+    fontWeight: '700',
+    color: 'rgb(121, 128, 255)'
+  }, "Project Scope:")), /*#__PURE__*/react.createElement(Unstable_Grid2_Grid2, {
+    xs: 12,
+    marginTop: '10px',
+    marginBottom: '10px'
+  }, "The common section covers the navigation, logo, footer, and root layout for all pages.", /*#__PURE__*/react.createElement(List_List, null, /*#__PURE__*/react.createElement(ListItem_ListItem, null, "1) The home page covers the grid, card, progress bar, and related media classes."), /*#__PURE__*/react.createElement(ListItem_ListItem, null, "2) The tasks pages cover the form-related input fields and list of data using a grid."))), /*#__PURE__*/react.createElement(Unstable_Grid2_Grid2, {
+    xs: 12,
+    marginTop: '10px',
+    marginBottom: '10px'
+  }, /*#__PURE__*/react.createElement(Typography_Typography, {
+    marginTop: '10px',
+    marginBottom: '10px',
+    variant: "h4",
+    margin: 'auto',
+    sx: {
+      fontSize: {
+        xs: '24px'
+      }
+    },
+    fontWeight: '700',
+    color: 'rgb(121, 128, 255)'
+  }, "WebPack Used:"), /*#__PURE__*/react.createElement(List_List, null, /*#__PURE__*/react.createElement(ListItem_ListItem, null, "1) Entry point"), /*#__PURE__*/react.createElement(ListItem_ListItem, null, "2) Output"), /*#__PURE__*/react.createElement(ListItem_ListItem, null, "3) HtmlWebpackPlugin"), /*#__PURE__*/react.createElement(ListItem_ListItem, null, "4) MiniCssExtractPlugin"), /*#__PURE__*/react.createElement(ListItem_ListItem, null, "5) CssMinimizerWebpackPlugin"), /*#__PURE__*/react.createElement(ListItem_ListItem, null, "6) CopyWebpackPlugin"), /*#__PURE__*/react.createElement(ListItem_ListItem, null, "7) babelrc"), /*#__PURE__*/react.createElement(ListItem_ListItem, null, "8) css-loader"), /*#__PURE__*/react.createElement(ListItem_ListItem, null, "9) file-loader"), /*#__PURE__*/react.createElement(ListItem_ListItem, null, "10) style-loader"))), /*#__PURE__*/react.createElement(Unstable_Grid2_Grid2, {
+    xs: 12,
+    marginTop: '10px',
+    marginBottom: '10px'
+  }, /*#__PURE__*/react.createElement(Typography_Typography, {
+    variant: "h4",
+    margin: 'auto',
+    sx: {
+      fontSize: {
+        xs: '24px'
+      }
+    },
+    fontWeight: '700',
+    color: 'rgb(121, 128, 255)'
+  }, "How to run code locally:")), /*#__PURE__*/react.createElement(Unstable_Grid2_Grid2, {
+    xs: 12,
+    marginTop: '10px',
+    marginBottom: '10px'
+  }, /*#__PURE__*/react.createElement(Typography_Typography, {
+    variant: "h5",
+    margin: 'auto',
+    sx: {
+      fontSize: {
+        xs: '24px'
+      }
+    },
+    fontWeight: '700',
+    color: 'rgb(121, 128, 255)'
+  }, "Frontend-"), /*#__PURE__*/react.createElement(List_List, null, /*#__PURE__*/react.createElement(ListItem_ListItem, null, "1) Need to make a clone of the branch from https://github.com/vishalphp/task-management-with-material-ui.git"), /*#__PURE__*/react.createElement(ListItem_ListItem, null, "2) Fire the command npm i locally to install all dependencies."), /*#__PURE__*/react.createElement(ListItem_ListItem, null, "3) Fire the command npm run start to start the server."), /*#__PURE__*/react.createElement(ListItem_ListItem, null, "4) Fire the URL (http://localhost:8080/) on the browser."))), /*#__PURE__*/react.createElement(Unstable_Grid2_Grid2, {
+    xs: 12,
+    marginTop: '10px',
+    marginBottom: '10px'
+  }, /*#__PURE__*/react.createElement(Typography_Typography, {
+    variant: "h5",
+    margin: 'auto',
+    sx: {
+      fontSize: {
+        xs: '24px'
+      }
+    },
+    fontWeight: '700',
+    color: 'rgb(121, 128, 255)'
+  }, "Backend-"), /*#__PURE__*/react.createElement(List_List, null, /*#__PURE__*/react.createElement(ListItem_ListItem, null, "1) No backend added/required.")))));
+}
 ;// CONCATENATED MODULE: ./src/Screen.js
+
 
 
 
@@ -34087,6 +34231,9 @@ function Screen() {
   }), /*#__PURE__*/react.createElement(Route, {
     path: "/tasks",
     element: /*#__PURE__*/react.createElement(addTask_Index, null)
+  }), /*#__PURE__*/react.createElement(Route, {
+    path: "/document",
+    element: /*#__PURE__*/react.createElement(Document, null)
   })));
 }
 ;// CONCATENATED MODULE: ./src/App.js

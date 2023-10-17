@@ -48,26 +48,26 @@ const toggleDrawer = (anchor, open) => (event) => {
           
           >
             <Box alignItems={'center'} justifyContent={'center'} style={{color: `${props.theme.palette.primary.topmenuText}`, backgroundColor: `${props.theme.palette.primary.main}`}} padding={'20px'} fontSize={'24px'} fontWeight={'700'}>
-            <Link href="#" color="inherit" rel="noopener" underline="hover">  <div className='logo' style={{color: `${props.theme.palette.primary.topmenuText}`, textAlign: 'center'}} >MatLearnTut</div> </Link>
+            <Link href="#" color="inherit" underline="hover">  <div className='logo' style={{color: `${props.theme.palette.primary.topmenuText}`, textAlign: 'center'}} >MatLearnTut</div> </Link>
             </Box>
             <List component={Stack} direction="column" fontWeight={700} style={{color: `${props.theme.palette.primary.topmenuText}`, backgroundColor: `${props.theme.palette.primary.main}`}} >
                
                 <ListItem style={{borderBottom: '1px solid #ccc'}}>
-                <DomLink to="/tasks" color="#fff" rel="noopener" underline="hover">  Tasks</DomLink>
+                <DomLink to="/tasks" style={{color: '#fff'}}  underline="hover">  Tasks</DomLink>
                 </ListItem>
                 <ListItem style={{borderBottom: '1px solid #ccc'}}>
-                <Link href="#" color="inherit" rel="noopener" underline="hover">Documents</Link>
-                </ListItem>
+                <DomLink to="/document" style={{color: '#fff'}}  underline="hover">  Documents</DomLink>
+              </ListItem>
             </List>
     </SwipeableDrawer>
 
     <List component={Stack} direction="row" fontWeight={700} style={{color: `${props.theme.palette.primary.topmenuText}`}} sx={{ display: { xs: 'none', sm: 'flex' }}}>
         <ListItem>
-        <DomLink to="/tasks" color="#fff" rel="noopener" underline="hover">  Tasks</DomLink>
+        <DomLink to="/tasks" style={{color: '#fff'}}  underline="hover">  Tasks</DomLink>
         </ListItem>
         <ListItem>
-        <Link href="#" color="inherit" rel="noopener" underline="hover">Documents</Link>
-        </ListItem>
+        <DomLink to="/document" style={{color: '#fff'}}  underline="hover">  Documents</DomLink>
+              </ListItem>
     </List>
     </Grid>
     </>
